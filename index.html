@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>command line quiz</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <br>
+        <div class="col s4"></div>
+        <div class="col s4 black-text" id = "questionText"></div></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <container id = "buttons">
+            <div class = "row">
+            <div class = "col s1"></div>
+            <button id = "button1" class = " col s1 answerButton" onclick="this.blur();"></button>
+            <div class = "col s2"></div>
+            <button id = "button2" class = " col s1 answerButton" onclick="this.blur();"></button>
+            <div class = "col s2"></div>
+            <button id = "button3" class = " col s1 answerButton" onclick="this.blur();"></button>
+            <div class = "col s2"></div>
+            <button id = "button4" class = " col s1 answerButton" onclick="this.blur();"></button>
+            <div class = "col s1"></div>
+            </div>
+        </container>
+        <h5 id ="correctText">
+            You have <span id ="numCorrect"> 0</span> correct
+            <br>
+            <br>
+            <progress id = "progressBar" value=0 max=5></progress>
+        </h5>
+        <container>
+            <div class = "row">
+                <div class = "col s4"></div>
+                <div id = "imageHere" class = " col s6 "></div>
+                <div class = "col s3"></div>
+            </div>
+        </container>
+        <script src="script.js"></script>
+    </body>
+</html>
